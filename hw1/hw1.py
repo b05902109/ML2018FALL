@@ -1,4 +1,4 @@
-from hw1_train import *
+from train import *
 import numpy as np
 import sys
 
