@@ -38,9 +38,9 @@ def generator_valid(trainX_valid, trainY_valid, dictionary):
 
 
 if __name__ == '__main__':
-	trainX = getTrainX(sys.argv[1])
-	testX = getTestX(sys.argv[3])
-	dictionary = trainWord2Vec(trainX, testX, sys.argv[4])
+	trainX = getTrainX(sys.argv[1], sys.argv[4])
+	testX = getTestX(sys.argv[3], sys.argv[4])
+	dictionary = trainWord2Vec(trainX, testX)
 	trainY = getTrainY(sys.argv[2])
 	trainXLen = len(trainX)
 	valid_n = trainXLen // 10
